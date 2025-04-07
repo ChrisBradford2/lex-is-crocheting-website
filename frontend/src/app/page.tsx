@@ -1,55 +1,193 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div>
-      <main>
-        <h1>Coucou</h1>
-      </main>
-      <footer>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div
+        className="hero min-h-screen"
+        style={{
+          backgroundImage:
+            "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+        }}
+      >
+        <div className="hero-overlay"></div>
+        <div className="hero-content text-neutral-content text-center">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <p className="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <ul className="list bg-base-100 rounded-box shadow-md">
+        <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">
+          Most played songs this week
+        </li>
+
+        <li className="list-row">
+          <div>
+            <img
+              className="size-10 rounded-box"
+              src="https://img.daisyui.com/images/profile/demo/1@94.webp"
+            />
+          </div>
+          <div>
+            <div>Dio Lupa</div>
+            <div className="text-xs uppercase font-semibold opacity-60">
+              Remaining Reason
+            </div>
+          </div>
+          <p className="list-col-wrap text-xs">
+            "Remaining Reason" became an instant hit, praised for its haunting
+            sound and emotional depth. A viral performance brought it widespread
+            recognition, making it one of Dio Lupa’s most iconic tracks.
+          </p>
+          <button className="btn btn-square btn-ghost">
+            <svg
+              className="size-[1.2em]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M6 3L20 12 6 21 6 3z"></path>
+              </g>
+            </svg>
+          </button>
+          <button className="btn btn-square btn-ghost">
+            <svg
+              className="size-[1.2em]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </g>
+            </svg>
+          </button>
+        </li>
+
+        <li className="list-row">
+          <div>
+            <img
+              className="size-10 rounded-box"
+              src="https://img.daisyui.com/images/profile/demo/4@94.webp"
+            />
+          </div>
+          <div>
+            <div>Ellie Beilish</div>
+            <div className="text-xs uppercase font-semibold opacity-60">
+              Bears of a fever
+            </div>
+          </div>
+          <p className="list-col-wrap text-xs">
+            "Bears of a Fever" captivated audiences with its intense energy and
+            mysterious lyrics. Its popularity skyrocketed after fans shared it
+            widely online, earning Ellie critical acclaim.
+          </p>
+          <button className="btn btn-square btn-ghost">
+            <svg
+              className="size-[1.2em]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M6 3L20 12 6 21 6 3z"></path>
+              </g>
+            </svg>
+          </button>
+          <button className="btn btn-square btn-ghost">
+            <svg
+              className="size-[1.2em]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </g>
+            </svg>
+          </button>
+        </li>
+
+        <li className="list-row">
+          <div>
+            <img
+              className="size-10 rounded-box"
+              src="https://img.daisyui.com/images/profile/demo/3@94.webp"
+            />
+          </div>
+          <div>
+            <div>Sabrino Gardener</div>
+            <div className="text-xs uppercase font-semibold opacity-60">
+              Cappuccino
+            </div>
+          </div>
+          <p className="list-col-wrap text-xs">
+            "Cappuccino" quickly gained attention for its smooth melody and
+            relatable themes. The song’s success propelled Sabrino into the
+            spotlight, solidifying their status as a rising star.
+          </p>
+          <button className="btn btn-square btn-ghost">
+            <svg
+              className="size-[1.2em]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M6 3L20 12 6 21 6 3z"></path>
+              </g>
+            </svg>
+          </button>
+          <button className="btn btn-square btn-ghost">
+            <svg
+              className="size-[1.2em]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </g>
+            </svg>
+          </button>
+        </li>
+      </ul>
     </div>
   );
 }
